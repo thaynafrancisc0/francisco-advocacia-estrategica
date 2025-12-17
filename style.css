@@ -171,4 +171,24 @@
             z-index: 100;
             text-decoration: none;
         }
+
+        /* Selos de confiança responsivos */
+        .trust-badges {
+            font-size: 0.75rem; /* Aumentei um pouco para facilitar leitura */
+            display: flex;
+            flex-direction: column; /* Um embaixo do outro por padrão (Mobile) */
+            align-items: center;
+            gap: 12px !important;
+            letter-spacing: 2px;
+        }
+
+        /* Ajuste para Desktop */
+        @media (min-width: 992px) {
+            .trust-badges {
+                flex-direction: row; /* Volta a ser lado a lado no PC */
+                justify-content: center;
+                gap: 30px !important;
+                font-size: 0.8rem;
+            }
+        }
    
