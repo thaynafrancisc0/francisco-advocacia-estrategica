@@ -1,0 +1,174 @@
+/* Ajuste de legibilidade nos cards */
+.card-service h3 {
+    color: var(--vinho-elite);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.card-service p.text-description {
+    color: #2d2d2d !important; /* Cinza grafite bem escuro para leitura clara */
+    line-height: 1.6;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.card-service {
+    background: #ffffff;
+    padding: 40px;
+    border: 1px solid #e0e0e0; /* Borda sutil para definir o card */
+    border-bottom: 4px solid transparent;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+
+        :root {
+            --vinho-elite: #630d16;
+            --vinho-hover: #4a0a10;
+            --off-white: #f9f9f9;
+            --text-dark: #333333;
+            --text-light: #666666;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--off-white);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Navbar Custom */
+        .navbar {
+            background-color: #fff;
+            border-bottom: 1px solid #eee;
+            padding: 1rem 0;
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: var(--vinho-elite) !important;
+            letter-spacing: 1px;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #fff 60%, #f2f2f2 100%);
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+            color: var(--vinho-elite);
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        /* Buttons */
+        .btn-vinho {
+            background-color: var(--vinho-elite);
+            color: #fff;
+            padding: 15px 35px;
+            font-weight: 600;
+            border-radius: 4px;
+            transition: all 0.3s;
+            border: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+        }
+
+        .btn-vinho:hover {
+            background-color: var(--vinho-hover);
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(99, 13, 22, 0.3);
+        }
+
+        /* Profile Image */
+        .profile-img-container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .profile-img-container::before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--vinho-elite);
+            z-index: 0;
+        }
+
+        .profile-img {
+            width: 100%;
+            max-width: 400px;
+            position: relative;
+            z-index: 1;
+            filter: grayscale(10%);
+        }
+
+        /* Areas Section */
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .card-service {
+            background: #fff;
+            padding: 40px;
+            border: none;
+            border-bottom: 3px solid transparent;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .card-service:hover {
+            border-bottom: 3px solid var(--vinho-elite);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .card-service i {
+            color: var(--vinho-elite);
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            padding: 40px 0;
+            font-size: 0.8rem;
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.2);
+            z-index: 100;
+            text-decoration: none;
+        }
+   
