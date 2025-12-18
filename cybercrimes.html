@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-WXJRZHGQ');</script>
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thayna Francisco | Especialista em Direito Digital</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    :root { --vinho: #630d16; --off-white: #fdfdfd; --grey-light: #f9f9f9; --chumbo: #1a1a1a; }
+    body { background: var(--off-white); font-family: 'Montserrat', sans-serif; color: #333; overflow-x: hidden; }
+    h1, h2, h3, .brand-name { font-family: 'Playfair Display', serif; font-weight: 700; }
+    
+    .navbar-premium { background: #fff; border-bottom: 1px solid #eee; }
+    .brand-name { color: var(--vinho); font-size: 1.25rem; letter-spacing: 1px; text-decoration: none; }
+    .brand-tag { font-size: 0.65rem; color: #888; letter-spacing: 1px; text-transform: uppercase; }
+
+    /* Hero Section */
+    .hero-section { padding: 80px 0; background: #fff; }
+    .kicker { color: var(--vinho); font-weight: 700; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; display: block; margin-bottom: 15px; }
+    .hero-title { font-size: 2.8rem; line-height: 1.1; margin-bottom: 25px; color: var(--chumbo); }
+    .hero-description { font-size: 1.1rem; color: #666; margin-bottom: 35px; max-width: 550px; }
+    .hero-punchline { font-weight: 700; border-left: 4px solid var(--vinho); padding-left: 20px; font-size: 1.2rem; margin-bottom: 40px; }
+
+    /* Foto e Moldura - Correção Centralização */
+    .photo-frame-official { position: relative; display: table; z-index: 1; margin-left: auto; }
+    .photo-frame-official::after { 
+        content: ''; position: absolute; top: 15px; right: -15px; 
+        width: 100%; height: 100%; border: 1px solid var(--vinho); z-index: -1; 
+    }
+    .profile-photo-official { position: relative; z-index: 2; background: #fff; max-height: 480px; object-fit: cover; width: 100%; }
+
+    /* Botões */
+    .btn-vinho { background: var(--vinho); color: #fff !important; padding: 18px 40px; text-decoration: none; font-weight: 700; font-size: 0.85rem; border-radius: 4px; display: inline-block; transition: 0.3s; border: none; text-transform: uppercase; }
+    .btn-vinho:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(99,13,22,0.15); }
+
+    /* Pilares */
+    .vinho-divider { width: 50px; height: 2px; background: var(--vinho); margin-bottom: 20px; }
+    .pillar-box { padding: 15px; transition: 0.3s; }
+    .pillar-box i { font-size: 2rem; color: var(--vinho); display: block; margin-bottom: 15px; }
+    .pillar-box h6 { font-weight: 700; color: var(--vinho); font-size: 0.95rem; margin-bottom: 10px; }
+
+    /* Atuação Cards (Desktop) */
+    .bg-grey-light { background: var(--grey-light); }
+    .area-card-official { background: #fff; padding: 45px; border: 1px solid #eee; height: 100%; transition: 0.3s; border-radius: 2px; }
+    .area-card-official:hover { border-color: var(--vinho); transform: translateY(-5px); }
+    .area-card-official h6 { font-weight: 700; color: var(--chumbo); margin-bottom: 15px; text-transform: uppercase; font-size: 0.85rem; }
+
+    /* Accordion (Mobile) */
+    .custom-accordion-official .accordion-item { border: none; border-bottom: 1px solid #eee; background: #fff; margin-bottom: 10px; }
+    .custom-accordion-official .accordion-button { font-weight: 700; font-size: 0.85rem; padding: 1.2rem; background: #fff !important; color: #333 !important; box-shadow: none !important; }
+    .custom-accordion-official .accordion-button:not(.collapsed) { color: var(--vinho) !important; border-bottom: 1px solid #eee; }
+
+    /* WhatsApp */
+    .whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 30px; right: 30px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; box-shadow: 2px 5px 15px rgba(0,0,0,0.1); }
+
+    @media (max-width: 991px) {
+      .hero-title { font-size: 2.2rem; }
+      .hero-section { text-align: center; }
+      .hero-description { margin: 0 auto 30px; }
+      .hero-punchline { text-align: center; border-left: none; border-top: 3px solid var(--vinho); padding: 20px 0 0 0; display: inline-block; }
+      .photo-frame-official { margin: 40px auto 0; display: table; float: none; } 
+      .photo-frame-official::after { right: -10px; top: 10px; }
+      .profile-photo-official { max-width: 290px; }
+      .btn-vinho { width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXJRZHGQ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <nav class="navbar-premium">
+    <div class="container d-flex justify-content-between align-items-center py-3">
+        <a href="index.html" class="brand-name">T. FRANCISCO</a>
+        <small class="brand-tag">NÚCLEO DE DIREITO DIGITAL</small>
+    </div>
+  </nav>
+
+  <header class="hero-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h6 class="kicker">PROTEÇÃO DIGITAL E REPUTACIONAL</h6>
+          <h1 class="hero-title">Vítima de Crimes Digitais?</h1>
+          <p class="hero-description">Atuação técnica imediata para remover conteúdos, identificar agressores e proteger sua intimidade no ambiente online.</p>
+          <h4 class="hero-punchline">A rapidez na ação digital preserva seus direitos.</h4>
+          <a target="_blank" href="https://wa.me/5511920016400" class="btn-vinho">Falar com a Especialista</a>
+        </div>
+        <div class="col-lg-6 mt-5 mt-lg-0">
+          <div class="photo-frame-official">
+            <img src="./media/thayna-header.png" alt="Thayna Francisco" class="img-fluid profile-photo-official">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="pilares py-5 bg-white">
+    <div class="container text-center">
+      <h6 class="kicker">SEGURANÇA NO AMBIENTE VIRTUAL</h6>
+      <h2 class="section-title">Sigilo, Tecnologia e Defesa Proativa</h2>
+      <div class="vinho-divider mx-auto mb-5"></div>
+      <div class="row g-4 text-start">
+        <div class="col-md-6 col-lg-3"><div class="pillar-box text-center"><i class="bi bi-shield-check"></i><h6>PROTEÇÃO DE INTIMIDADE</h6><p class="small">Ações céleres para conter vazamentos e exposições indevidas em redes sociais.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="pillar-box text-center"><i class="bi bi-search"></i><h6>PRESERVAÇÃO DE PROVA</h6><p class="small">Orientações técnicas para coleta de evidências digitais com validade judicial.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="pillar-box text-center"><i class="bi bi-lightning-charge"></i><h6>AÇÃO JUDICIAL CÉLERE</h6><p class="small">Busca estratégica de medidas protetivas contra autores de stalking e assédio.</p></div></div>
+        <div class="col-md-6 col-lg-3"><div class="pillar-box text-center"><i class="bi bi-person-badge"></i><h6>GESTÃO DE REPUTAÇÃO</h6><p class="small">Derrubada de conteúdos ofensivos e defesa contra ataques coordenados online.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="atuacao-mobile d-block d-md-none py-5 bg-grey-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Crimes Digitais</h2>
+      <div class="accordion custom-accordion-official" id="accordionCyber">
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy1">GOLPE DA PLATAFORMA DE INVESTIMENTOS</button></h2><div id="cy1" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Recuperação e defesa em fraudes envolvendo falsas corretoras e plataformas.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy2">GOLPE DAS CRIPTOMOEDAS</button></h2><div id="cy2" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Rastreamento e medidas judiciais para ativos desviados em carteiras digitais.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy3">FALSAS PROMOÇÕES EM E-COMMERCES</button></h2><div id="cy3" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Ações contra sites clonados e anúncios fraudulentos que lesam consumidores.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy4">FALSAS ASSINATURAS E USO DO GOV.BR</button></h2><div id="cy4" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Defesa contra uso indevido de identidade digital para empréstimos e assinaturas falsas.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy5">GOLPE TECNOLOGIA PIX</button></h2><div id="cy5" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Recuperação de valores via MED e responsabilidade bancária em fraudes PIX.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy6">FALSO MARKETPLACE / PIX REVERSO</button></h2><div id="cy6" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Defesa em golpes de venda e estorno fraudulento de valores em plataformas.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy7">GOLPES DAS TAREFAS OU DO EMPREGO</button></h2><div id="cy7" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Ação contra esquemas de pirâmide mascarados de trabalho online remunerado.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy8">FALSO GERENTE 0800 / MÃO FANTASMA</button></h2><div id="cy8" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Defesa em casos de acesso remoto indevido a contas bancárias via suporte falso.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy9">GOLPES ENVOLVENDO GOVERNO</button></h2><div id="cy9" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Fraudes envolvendo benefícios sociais, impostos ou taxas públicas inexistentes.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy10">GOLPE DO RELACIONAMENTO (DON JUAN)</button></h2><div id="cy10" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Combate à extorsão e estelionato sentimental em redes sociais e apps.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy11">FALSAS CONSULTAS E EXAMES</button></h2><div id="cy11" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Fraudes no setor de saúde e convênios aplicadas via canais digitais.</div></div></div>
+        <div class="accordion-item"><h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#cy12">CLONAGEM DE CELULAR / SIM SWAP</button></h2><div id="cy12" class="accordion-collapse collapse" data-bs-parent="#accordionCyber"><div class="accordion-body">Responsabilização de operadoras e recuperação de acessos e contas invadidas.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="atuacao-desktop d-none d-md-block py-5 bg-grey-light">
+    <div class="container text-center">
+      <h2 class="section-title mb-5">Inteligência Jurídica Digital</h2>
+      <div class="row g-4 text-start">
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-chart-line" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Investimentos & Cripto</h6><p>Recuperação em fraudes de corretoras e desvios de ativos digitais.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-id-card-personal" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Identidade & Gov.br</h6><p>Defesa contra assinaturas falsas e uso indevido de dados públicos.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-building-columns" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>PIX & Fraude Bancária</h6><p>Mecanismos de devolução e responsabilização de falhas bancárias.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-cart-shopping" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Marketplace Fraudulento</h6><p>Ação contra golpes em plataformas de venda e Pix Reverso.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-heart-crack" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Estelionato Sentimental</h6><p>Proteção jurídica contra extorsão e manipulação emocional online.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-mobile-screen" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Acesso Remoto (Mão Fantasma)</h6><p>Medidas contra invasões via suporte falso ou 0800 indevido.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-users-rays" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Pirâmides Digitais</h6><p>Combate a esquemas de "tarefas remuneradas" e falsos empregos.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-sim-card" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>SIM Swap & Clonagem</h6><p>Recuperação de contas e responsabilização de operadoras de telefonia.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-bag-shopping" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>E-commerce & Sites Falsos</h6><p>Derrubada de domínios fraudulentos e proteção ao consumidor digital.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-user-doctor" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Fraudes na Saúde</h6><p>Ações contra clínicas falsas e consultas fraudulentas via WhatsApp.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-mask" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Assédio & Stalking</h6><p>Identificação de agressores e medidas protetivas digitais urgentes.</p></div></div>
+        <div class="col-lg-4"><div class="area-card-official"><div class="mb-3"><i class="fa-solid fa-bullhorn" style="color:var(--vinho); opacity:0.7; font-size:1.8rem;"></i></div><h6>Dano Reputacional</h6><p>Remoção de conteúdo difamatório e reparação por ataques online.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-statement py-5 text-center bg-white border-top">
+    <div class="container">
+      <h6 class="kicker">O TEMPO É CRUCIAL</h6>
+      <h2 class="section-title">Recupere Sua Segurança Online</h2>
+      <div class="vinho-divider mx-auto mb-4"></div>
+      <p class="mx-auto text-muted mb-5" style="max-width: 750px;">
+        Quanto antes agirmos, maiores as chances de identificar o autor, conter o dano e traçar a estratégia.
+      </p>
+      <a target="_blank" href="https://wa.me/5511920016400" class="btn-vinho">Falar com a Especialista</a>
+    </div>
+  </section>
+
+  <footer class="py-5 bg-white border-top text-center">
+    <div class="container">
+      <span class="brand-name">THAYNA FRANCISCO</span>
+      <p class="small text-muted mt-2">© 2025 | OAB/SP 536.470</p>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/5511920016400" class="whatsapp-float" target="_blank"><i class="bi bi-whatsapp"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
