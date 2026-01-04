@@ -3,195 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>T. Francisco | Direito Bancário e Desbloqueio de Contas</title>
+    <title>Francisco Advogados | Direito Bancário e Desbloqueio de Contas</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <style>
-        :root {
-            --vinho: #630d16;
-            --chumbo: #1a1a1a;
-            --off-white: #fdfdfd;
-            --text-light: #666;
-        }
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="media/favicon.ico">
 
-        body { 
-            background-color: var(--off-white); 
-            font-family: 'Montserrat', sans-serif; 
-            color: #333; 
-            line-height: 1.6;
-        }
-
-        h1, h2, h3, .brand-name { 
-            font-family: 'Playfair Display', serif; 
-            font-weight: 700; 
-        }
-
-        /* Navbar */
-        .navbar { 
-            background-color: rgba(255, 255, 255, 0.95); 
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #eee; 
-            padding: 1.2rem 0; 
-        }
-        .brand-name { 
-            color: var(--vinho); 
-            font-size: 1.3rem; 
-            letter-spacing: 2px; 
-            text-decoration: none;
-            text-transform: uppercase;
-        }
-        .nav-tagline {
-            font-size: 0.65rem;
-            display: block;
-            letter-spacing: 1px;
-            color: var(--text-light);
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 400;
-        }
-
-        /* Hero Section */
-        .hero { 
-            padding: 100px 0 80px; 
-            background: radial-gradient(circle at top right, #fff 0%, var(--off-white) 100%);
-        }
-        .badge-status {
-            display: inline-block;
-            padding: 5px 12px;
-            background: rgba(99, 13, 22, 0.05);
-            color: var(--vinho);
-            font-weight: 700;
-            font-size: 0.7rem;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            margin-bottom: 20px;
-            border-left: 3px solid var(--vinho);
-        }
-        .hero h1 { 
-            font-size: 3rem; 
-            line-height: 1.1; 
-            color: var(--chumbo); 
-            margin-bottom: 25px; 
-        }
-        .hero p { 
-            font-size: 1.15rem; 
-            color: var(--text-light); 
-            margin-bottom: 35px; 
-            max-width: 550px;
-        }
-
-        /* Imagem da Especialista */
-        .img-container {
-            position: relative;
-            display: inline-block;
-        }
-        .img-container img {
-            border-radius: 4px;
-            position: relative;
-            z-index: 2;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-            width: 400px; 
-            height: 550px; 
-            object-fit: cover;
-        }
-        .img-container::after {
-            content: "";
-            position: absolute;
-            top: 20px;
-            right: -20px;
-            width: 100%;
-            height: 100%;
-            border: 1px solid var(--vinho);
-            z-index: 1;
-            border-radius: 4px;
-        }
-
-        /* Cards de Dor */
-        .card-dor {
-            background: #fff;
-            padding: 35px;
-            border: 1px solid #f0f0f0;
-            border-radius: 0;
-            height: 100%;
-            transition: 0.4s;
-        }
-        .card-dor:hover {
-            border-color: var(--vinho);
-            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
-        }
-        .card-dor i {
-            font-size: 2rem;
-            color: var(--vinho);
-            margin-bottom: 20px;
-            display: block;
-        }
-        .card-dor h3 { font-size: 1.25rem; margin-bottom: 15px; }
-
-        /* Timeline 1-2-3 */
-        .timeline-section { padding: 80px 0; background: #fff; }
-        .step-item { text-align: center; position: relative; }
-        .step-number {
-            width: 50px;
-            height: 50px;
-            background: var(--vinho);
-            color: #fff;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-weight: 700;
-            font-family: 'Playfair Display', serif;
-            font-size: 1.4rem;
-        }
-
-        /* FAQ Section */
-        .faq-section { padding: 60px 0; background: #fafafa; }
-        .accordion-item { border: none; margin-bottom: 10px; background: #fff; }
-        .accordion-button { font-family: 'Montserrat', sans-serif; font-weight: 600; font-size: 0.95rem; color: var(--chumbo); }
-        .accordion-button:not(.collapsed) { background-color: rgba(99, 13, 22, 0.05); color: var(--vinho); box-shadow: none; }
-        .accordion-body { font-family: 'Montserrat', sans-serif; font-size: 0.9rem; color: var(--text-light); border-top: 1px solid #eee; }
-
-        /* CTA Section */
-        .cta-final { padding: 80px 0; }
-        .btn-vinho {
-            background-color: var(--vinho);
-            color: #fff !important;
-            padding: 18px 40px;
-            font-weight: 700;
-            text-transform: uppercase;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            border-radius: 4px;
-            transition: 0.3s;
-            border: none;
-            display: inline-block;
-            text-decoration: none;
-        }
-        .btn-vinho:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(99, 13, 22, 0.2);
-        }
-
-        @media (max-width: 991px) {
-            .hero { text-align: center; padding: 60px 0; }
-            .hero p { margin: 0 auto 35px; }
-            .img-container { margin-top: 50px; }
-            .img-container::after { display: none; }
-        }
-    </style>
 </head>
 <body>
 
     <nav class="navbar sticky-top">
         <div class="container d-flex justify-content-between align-items-center">
-            <a class="brand-name" href="#">
+            <a class="brand-name" href="index.html">
                 FRANCISCO
-                <span class="nav-tagline">ADVOCACIA ESTRATÉGICA</span>
+                <span class="nav-tagline">ADVOCACIA E CONSULTORIA JURÍDICA</span>
             </a>
-            <a href="https://wa.me/5511920016400" class="btn btn-outline-dark btn-sm fw-bold px-3">CONTATO</a>
+            <a href="https://wa.me/5511920016400?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Francisco%20Advogados%20—%20N%C3%BAcleo%20de%20Direito%20Banc%C3%A1rio.%0A%0AMinha%20conta%20banc%C3%A1ria%20foi%20bloqueada%20e%20gostaria%20de%20uma%20an%C3%A1lise%20inicial%20do%20meu%20caso." class="btn btn-outline-custom fw-bold">CONTATO</a>
         </div>
     </nav>
 
@@ -202,44 +32,44 @@
                     <span class="badge-status">Núcleo de Direito Bancário</span>
                     <h1>Sua conta bancária foi bloqueada sem aviso prévio?</h1>
                     <p>Atuamos de forma técnica e ágil para reestabelecer o acesso aos seus recursos e proteger o patrimônio da sua empresa ou família.</p>
-                    <a href="https://wa.me/5511920016400" class="btn-vinho">
+                    <a href="https://wa.me/5511920016400?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Francisco%20Advogados%20—%20N%C3%BAcleo%20de%20Direito%20Banc%C3%A1rio.%0A%0AMinha%20conta%20banc%C3%A1ria%20foi%20bloqueada%20e%20gostaria%20de%20uma%20an%C3%A1lise%20inicial%20do%20meu%20caso." class="btn-vinho">
                         <i class="bi bi-whatsapp me-2"></i> Analisar meu caso agora
                     </a>
-                    <div class="mt-4 small text-muted">
-                        Coordenação: <strong>Dra. Deborah Pereira</strong> — OAB/SP 489.993
+                    <div class="mt-4 small" style="color: var(--taupe);">
+                        Coordenação: <strong style="color: var(--deep-wine);">Dra. Deborah Pereira</strong> — OAB/SP 489.993
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
                     <div class="img-container">
-                        <img src="media/dra-deborah-pereira.jpg" alt="Dra. Deborah Pereira" class="img-fluid">
+                        <img src="media/dra-deborah-pereira.png" alt="Dra. Deborah Pereira" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-custom-light">
         <div class="container">
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="card-dor">
                         <i class="bi bi-bank"></i>
                         <h3>Bloqueio Unilateral</h3>
-                        <p class="text-muted">Suspensão imediata de contas PF ou PJ sem a devida fundamentação legal ou aviso prévio.</p>
+                        <p class="text-muted-custom">Suspensão imediata de contas PF ou PJ sem a devida fundamentação legal ou aviso prévio.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-dor">
                         <i class="bi bi-shield-lock"></i>
                         <h3>Bancos Digitais e Fintechs</h3>
-                        <p class="text-muted">Apoio para empresas com giro financeiro travado por algoritmos abusivos e retenção de capital de giro.</p>
+                        <p class="text-muted-custom">Apoio para empresas com giro financeiro travado por algoritmos abusivos e retenção de capital de giro.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="card-dor">
                         <i class="bi bi-lightning-charge"></i>
                         <h3>Medidas Urgentes</h3>
-                        <p class="text-muted">Protocolo imediato de pedidos liminares para reestabelecimento do acesso e normalização operacional.</p>
+                        <p class="text-muted-custom">Protocolo imediato de pedidos liminares para reestabelecimento do acesso e normalização operacional.</p>
                     </div>
                 </div>
             </div>
@@ -254,21 +84,21 @@
                     <div class="step-item">
                         <div class="step-number">1</div>
                         <h4 class="fw-bold">Análise Técnica</h4>
-                        <p class="small text-muted">Identificamos a origem do bloqueio e a viabilidade jurídica da reversão imediata.</p>
+                        <p class="small text-muted-custom">Identificamos a origem do bloqueio e a viabilidade jurídica da reversão imediata.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="step-item">
                         <div class="step-number">2</div>
                         <h4 class="fw-bold">Estratégia Judicial</h4>
-                        <p class="small text-muted">Elaboração da peça defensiva com foco em medidas liminares de urgência.</p>
+                        <p class="small text-muted-custom">Elaboração da peça defensiva com foco em medidas liminares de urgência.</p>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="step-item">
                         <div class="step-number">3</div>
                         <h4 class="fw-bold">Ação e Reversão</h4>
-                        <p class="small text-muted">Protocolo e acompanhamento diário até que o acesso aos valores seja reestabelecido.</p>
+                        <p class="small text-muted-custom">Protocolo e acompanhamento diário até que o acesso aos valores seja reestabelecido.</p>
                     </div>
                 </div>
             </div>
@@ -277,9 +107,9 @@
 
     <section class="faq-section">
         <div class="container">
-            <h2 class="text-center mb-5" style="font-family: 'Playfair Display', serif;">Perguntas Frequentes</h2>
+            <h2 class="text-center mb-5">Perguntas Frequentes</h2>
             <div class="accordion mx-auto" id="faqAccordion" style="max-width: 800px;">
-                <div class="accordion-item shadow-sm">
+                <div class="accordion-item shadow-sm border-0">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
                             Quanto tempo leva para desbloquear minha conta?
@@ -291,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item shadow-sm">
+                <div class="accordion-item shadow-sm border-0">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
                             Posso processar o banco por danos morais?
@@ -303,7 +133,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item shadow-sm">
+                <div class="accordion-item shadow-sm border-0">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
                             Há custos para a análise inicial do meu caso?
@@ -319,22 +149,32 @@
         </div>
     </section>
 
-    <section class="cta-final text-center bg-white">
+    <section class="cta-final text-center">
         <div class="container">
             <h2>Seu dinheiro não pode ficar refém do banco.</h2>
             <p>Atendimento especializado e focado na proteção do seu patrimônio.</p>
-            <a href="https://wa.me/5511920016400" class="btn-vinho">Falar agora com a equipe jurídica</a>
+            <a href="https://wa.me/5511920016400?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Francisco%20Advogados%20—%20N%C3%BAcleo%20de%20Direito%20Banc%C3%A1rio.%0A%0AMinha%20conta%20banc%C3%A1ria%20foi%20bloqueada%20e%20gostaria%20de%20uma%20an%C3%A1lise%20inicial%20do%20meu%20caso."class="btn-gold">Falar agora com a equipe jurídica</a>
         </div>
     </section>
 
-    <footer class="py-5 bg-white border-top">
-        <div class="container text-center">
-            <h5 class="brand-name mb-3">FRANCISCO</h5>
-            <p class="text-muted small mb-0">© 2025 Advocacia Estratégica. Todos os direitos reservados. OAB/SP 536.470</p>
-            <p class="text-muted small">Atendimento em conformidade com as normas éticas da OAB.</p>
-        </div>
+    <footer class="footer-custom text-center">
+    <div class="container">
+        <h5 class="footer-brand">FRANCISCO</h5>
+        <p class="footer-text mb-0">
+        © 2026 - Todos os direitos reservados.
+        </p>
+        <p class="footer-text">Atendimento em conformidade com as normas éticas da OAB.
+        <br>
+        OAB/SP 489.993
+        </p>
+    </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <a href="https://wa.me/5511920016400?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Francisco%20Advogados%20—%20N%C3%BAcleo%20de%20Direito%20Banc%C3%A1rio.%0A%0AMinha%20conta%20banc%C3%A1ria%20foi%20bloqueada%20e%20gostaria%20de%20uma%20an%C3%A1lise%20inicial%20do%20meu%20caso." class="whatsapp-float" aria-label="Contato via WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+    </a>
+
 </body>
 </html>

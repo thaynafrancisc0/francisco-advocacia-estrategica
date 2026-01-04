@@ -1,116 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francisco Advocacia Estratégica | Full Service</title>
-    
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <meta charset="UTF-8">
+  <title>Francisco Advogados</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        :root {
-            --vinho: #630d16;
-            --off-white: #fdfdfd;
-            --grey-light: #f9f9f9;
-            --chumbo: #1a1a1a;
-        }
-
-        body { background-color: var(--off-white); font-family: 'Montserrat', sans-serif; color: #333; overflow-x: hidden; }
-        h1, h2, h3, .navbar-brand { font-family: 'Playfair Display', serif; font-weight: 700; }
-
-        /* Navbar */
-        .navbar { background-color: #fff; border-bottom: 1px solid #eee; padding: 1rem 0; }
-        .navbar-brand { color: var(--vinho) !important; font-size: 1.4rem; letter-spacing: 1px; }
-
-        /* Hero Hub */
-        .hero { padding: 100px 0 60px; text-align: center; background: #fff; }
-        .subtitle { color: var(--vinho); font-weight: 700; font-size: 0.75rem; letter-spacing: 3px; text-transform: uppercase; display: block; margin-bottom: 20px; }
-        .hero h1 { font-size: 3rem; line-height: 1.1; color: var(--chumbo); margin-bottom: 25px; }
-        .hero p { max-width: 700px; margin: 0 auto 40px; font-size: 1.1rem; color: #666; }
-
-        /* Grid de Especialidades */
-        .spec-grid { padding: 60px 0; background: var(--grey-light); }
-        .grid-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-        
-        .grid-item { 
-            background: #fff; padding: 40px; border: 1px solid #eee; text-decoration: none; 
-            color: inherit; transition: 0.3s; display: flex; flex-direction: column; 
-        }
-        .grid-item:hover { border-color: var(--vinho); transform: translateY(-5px); }
-        .grid-item .number { font-size: 0.7rem; color: var(--vinho); font-weight: 700; margin-bottom: 20px; }
-        .grid-item h3 { font-size: 1.5rem; margin-bottom: 15px; color: var(--chumbo); }
-        .grid-item p { font-size: 0.9rem; color: #666; line-height: 1.6; }
-
-        /* CTA */
-        .btn-vinho-full { 
-            background-color: var(--vinho); color: #fff !important; padding: 18px 40px; 
-            font-weight: 700; text-decoration: none; border-radius: 4px; display: inline-block;
-            transition: 0.3s; text-transform: uppercase; font-size: 0.85rem;
-        }
-        .btn-vinho-full:hover { opacity: 0.9; transform: scale(1.02); }
-
-        /* Footer */
-        footer { padding: 40px 0; background: #fff; border-top: 1px solid #eee; }
-
-        @media (max-width: 768px) {
-            .hero h1 { font-size: 2.2rem; }
-            .grid-container { grid-template-columns: 1fr; }
-        }
-    </style>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="media/favicon.ico">
 </head>
+
 <body>
 
-    <nav class="navbar sticky-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <a class="navbar-brand" href="#">FRANCISCO</a>
-            <a href="https://wa.me/5511920016400" class="btn btn-outline-dark btn-sm fw-bold">CONSULTORIA</a>
-        </div>
-    </nav>
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container d-flex justify-content-between align-items-center">
+    <a class="brand-name" href="index.html">
+      FRANCISCO
+      <span class="nav-tagline">ADVOCACIA E CONSULTORIA JURÍDICA</span>
+    </a>
+    <a href="https://wa.me/5511920016400" class="btn btn-outline-custom">CONTATO</a>
+  </div>
+</nav>
 
-    <header class="hero">
-        <div class="container">
-            <span class="subtitle">ADVOCACIA ESTRATÉGICA</span>
-            <h1>Excelência jurídica na defesa dos seus direitos.</h1>
-            <p>Um hub de especialidades que conecta o seu caso a profissionais de alta performance, preparados para soluções ágeis e táticas.</p>
-            <a href="#especialidades" class="btn-vinho-full">Conhecer Áreas de Atuação</a>
-        </div>
-    </header>
+<header class="hero">
+  <div class="container">
+    <span class="badge-status">ATUAÇÃO POR NÚCLEOS</span>
 
-    <section id="especialidades" class="spec-grid">
-        <div class="container">
-            <div class="grid-container">
-                <a href="criminalista.html" class="grid-item">
-                    <span class="number">01 / CRIMINAL</span>
-                    <h3>Direito Criminal Estratégico</h3>
-                    <p>Atuação imediata em casos urgentes, audiências de custódia e defesa penal de alta complexidade.</p>
-                </a>
-                <a href="cybercrimes.html" class="grid-item">
-                    <span class="number">02 / DIGITAL</span>
-                    <h3>Crimes Cibernéticos</h3>
-                    <p>Proteção de reputação digital e defesa especializada em fraudes eletrônicas e invasões.</p>
-                </a>
-                <a href="direito-bancario.html" class="grid-item">
-                    <span class="number">03 / BANCÁRIO</span>
-                    <h3>Direito Bancário</h3>
-                    <p>Recuperação de valores, defesa contra juros abusivos e proteção do patrimônio familiar.</p>
-                </a>
-                <a href="#" class="grid-item">
-                    <span class="number">04 / SAÚDE</span>
-                    <h3>Direito à Saúde</h3>
-                    <p>Especialistas em causas de TEA (Autismo), negativas de planos e medicamentos de alto custo.</p>
-                </a>
-            </div>
-        </div>
-    </section>
+    <h1>
+      Atuação jurídica estruturada,<br>
+      com método e responsabilidade.
+    </h1>
 
-    <footer class="text-center">
-        <div class="container">
-            <p class="fw-bold text-dark mb-1">FRANCISCO ADVOCACIA ESTRATÉGICA</p>
-            <p class="m-0 text-muted small">© 2025. Todos os direitos reservados. <br>OAB/SP 536.470</p>
-        </div>
-    </footer>
+    <p class="hero-text">
+      O Francisco Advogados atua por núcleos estratégicos, organizando cada demanda
+      com critério técnico, previsibilidade e respeito absoluto às normas éticas da advocacia.
+    </p>
+
+    <!-- CTA INSTITUCIONAL DISCRETO -->
+    <a href="#areas" class="btn btn-outline-secondary btn-hero-secondary">
+      Conhecer o escritório
+    </a>
+  </div>
+</header>
+
+
+
+<section class="py-5 bg-white" id="areas">
+  <div class="container">
+    <div class="row g-4">
+
+      <h1>Núcleos de Atuação</h1>
+
+      <div class="col-md-4">
+        <a href="#" class="area-card">
+          <i class="bi bi-shield-lock"></i>
+          <h3>Defesa Penal & Crimes Digitais</h3>
+          <p>
+            Atuação técnica em investigações, processos criminais e crimes digitais,
+            com foco na proteção da liberdade e da reputação.
+          </p>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="direito-bancario.html" class="area-card">
+          <i class="bi bi-bank"></i>
+          <h3>Proteção Patrimonial & Bancária</h3>
+          <p>
+            Atuação em bloqueios de contas, retenções indevidas e medidas urgentes
+            para preservação do patrimônio.
+          </p>
+        </a>
+      </div>
+
+      <div class="col-md-4">
+        <a href="#" class="area-card">
+          <i class="bi bi-heart-pulse"></i>
+          <h3>Saúde, Tratamentos & Dignidade</h3>
+          <p>
+            Defesa do acesso à saúde, medicamentos de alto custo e tratamentos
+            essenciais negados por operadoras.
+          </p>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<section class="authority-section">
+  <div class="container text-center">
+    <h2>Estrutura jurídica pensada para decisões responsáveis</h2>
+    <p>
+      Cada núcleo atua com organização própria, controle de prazos e condução técnica,
+      assegurando qualidade, clareza e atendimento ético em todas as etapas do processo.
+    </p>
+  </div>
+</section>
+
+<footer class="footer-custom text-center">
+  <div class="container">
+    <h5 class="footer-brand">FRANCISCO</h5>
+    <p class="footer-text mb-0">
+      © 2026 - Todos os direitos reservados.
+    </p>
+    <p class="footer-text">Atendimento em conformidade com as normas éticas da OAB.
+      <br>
+      OAB/SP 536.470
+    </p>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <a href="https://wa.me/5511920016400?text=Ol%C3%A1!%20Vim%20pelo%20site%20do%20Francisco%20Advogados%20—%20N%C3%BAcleo%20de%20Direito%20Banc%C3%A1rio.%0A%0AMinha%20conta%20banc%C3%A1ria%20foi%20bloqueada%20e%20gostaria%20de%20uma%20an%C3%A1lise%20inicial%20do%20meu%20caso." class="whatsapp-float" aria-label="Contato via WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+  </a>
 
 </body>
 </html>
