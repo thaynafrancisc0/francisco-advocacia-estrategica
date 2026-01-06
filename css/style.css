@@ -220,7 +220,7 @@ h1, h2, h3, .brand-name, .step-number, .footer-brand {
 
 /* Botão Cta Final */
 .btn-final {
-  background-color: #CBC0B2;
+  background: var(--soft-beige) !important;
   color: var(--deep-wine) !important;
   padding: 18px 45px;
   font-weight: 700;
