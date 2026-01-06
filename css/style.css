@@ -218,9 +218,9 @@ h1, h2, h3, .brand-name, .step-number, .footer-brand {
   box-shadow: 0 10px 20px rgba(85,11,20,0.2);
 }
 
-/* Botão Dourado */
-.btn-gold {
-  background: var(--gold-gradient);
+/* Botão Cta Final */
+.btn-final {
+  background: #CBC0B2;
   color: var(--deep-wine) !important;
   padding: 18px 45px;
   font-weight: 700;
