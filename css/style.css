@@ -1,14 +1,16 @@
 :root {
+  /* PALETA OFICIAL */
   --deep-wine: #550B14;
-  --wine-dark: #3A060C;
   --off-white: #F8F8F7;
   --soft-beige: #CBC0B2;
   --taupe: #7E6961;
   --text-dark: #2c2c2c;
-  --section-alt: #F2EFED;
+  
+  /* Gold Matte Simulation */
+  --gold-matte: #C5A059; 
+  --gold-gradient: linear-gradient(135deg, #D4AF37 0%, #C5A059 100%);
 }
 
-/* Global */
 body {
   background-color: var(--off-white);
   font-family: 'Montserrat', sans-serif;
@@ -16,34 +18,28 @@ body {
   line-height: 1.7;
 }
 
-/* Alternância de seções */
-section:nth-of-type(odd) {
-  background-color: var(--off-white);
-}
-section:nth-of-type(even) {
-  background-color: var(--section-alt);
-}
-
-/* Tipografia */
-h1, h2, h3, .brand-name, .footer-brand {
+/* TIPOGRAFIA GLOBAL */
+h1, h2, h3, .brand-name, .step-number, .footer-brand {
   font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: var(--deep-wine);
 }
 
-/* Navbar */
+/* --- NAVBAR (Padronizada Dark Wine) --- */
 .navbar {
   background-color: var(--deep-wine);
   padding: 1.5rem 0;
   border-bottom: 1px solid rgba(255,255,255,0.1);
 }
+
 .brand-name {
-  color: #fff !important;
+  color: #ffffff !important; /* Força branco sobre o fundo vinho */
   font-size: 1.5rem;
   letter-spacing: 1.5px;
   text-decoration: none;
   text-transform: uppercase;
 }
+
 .nav-tagline {
   font-size: 0.65rem;
   display: block;
@@ -54,22 +50,49 @@ h1, h2, h3, .brand-name, .footer-brand {
   margin-top: 4px;
 }
 
-/* Hero */
+/* Botão Navbar (Outline Branco) */
+.btn-outline-custom, 
+.navbar .btn-outline-light { 
+  /* Unificando classes para garantir o estilo */
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  padding: 8px 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn-outline-custom:hover,
+.navbar .btn-outline-light:hover {
+  background-color: #ffffff;
+  color: var(--deep-wine);
+}
+
+/* --- HERO SECTION --- */
 .hero {
   padding: 100px 0 80px;
-  background: radial-gradient(circle at top right, #fff 0%, var(--off-white) 100%);
+  background: radial-gradient(circle at top right, #ffffff 0%, var(--off-white) 100%);
 }
+
 .hero h1 {
   font-size: 3.2rem;
   line-height: 1.15;
   margin-bottom: 25px;
 }
+
 .hero p {
   font-size: 1.15rem;
   color: var(--taupe);
+  font-weight: 400;
   margin-bottom: 35px;
   max-width: 800px;
 }
+
 .badge-status {
   display: inline-block;
   padding: 6px 14px;
@@ -83,55 +106,40 @@ h1, h2, h3, .brand-name, .footer-brand {
   border-left: 3px solid var(--deep-wine);
 }
 
-/* Botões */
-.btn-vinho, .btn-final {
-  display: inline-block;
-  text-decoration: none;
-  text-transform: uppercase;
+.btn-hero-secondary {
+  padding: 10px 28px;
   font-size: 0.85rem;
-  letter-spacing: 1.5px;
-  border-radius: 2px;
-  transition: 0.3s;
-  font-weight: 600;
-}
-.btn-vinho {
-  background: var(--deep-wine);
-  color: #fff !important;
-  border: 1px solid var(--deep-wine);
-  padding: 16px 40px;
-}
-.btn-vinho:hover {
-  background: #3a060c;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(85,11,20,0.2);
-}
-.btn-final {
-  background: #fff!important;
-  color: var(--wine-dark) !important;
-  padding: 20px 45px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  border: none;
-}
-.btn-final:hover {
-  background: var(--off-white);
-  transform: translateY(-3px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-color: var(--taupe);
+  color: var(--deep-wine);
 }
 
-/* Imagem */
+.btn-hero-secondary:hover {
+  background-color: var(--deep-wine);
+  color: #fff;
+  border-color: var(--deep-wine);
+}
+
+
+/* IMAGENS E EFEITOS */
 .img-container {
   position: relative;
   display: inline-block;
 }
+
 .img-container img {
   border-radius: 2px;
+  position: relative;
   z-index: 2;
   box-shadow: 0 25px 50px rgba(85, 11, 20, 0.15);
   width: 100%;
   max-width: 400px;
+  height: auto;
+  object-fit: cover;
   border: 1px solid rgba(255,255,255,0.5);
 }
+
 .img-container::after {
   content: "";
   position: absolute;
@@ -139,41 +147,119 @@ h1, h2, h3, .brand-name, .footer-brand {
   right: -20px;
   width: 100%;
   height: 100%;
-  border: 1px solid var(--soft-beige);
+  border: 1px solid var(--deep-wine);
   z-index: 1;
   border-radius: 2px;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
-/* Cards */
-.card-dor {
+/* --- CARDS (Áreas e Dores) --- */
+.bg-custom-light { background-color: #fff; }
+
+.card-dor, .area-card {
   background: #fff;
   padding: 40px 35px;
   border: 1px solid var(--soft-beige);
   border-radius: 2px;
-  box-shadow: 0 10px 30px rgba(126, 105, 97, 0.08);
-  border-bottom: 4px solid var(--deep-wine);
+  height: 100%;
   transition: 0.4s;
+  position: relative;
+  overflow: hidden;
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
-.card-dor:hover {
+
+.card-dor:hover, .area-card:hover {
+  border-color: var(--deep-wine);
+  background: #fff;
+  box-shadow: 0 15px 35px rgba(126, 105, 97, 0.1);
   transform: translateY(-5px);
-  box-shadow: 0 15px 35px rgba(126, 105, 97, 0.12);
 }
-.card-dor i {
+
+.card-dor i, .area-card i {
   font-size: 2.2rem;
   color: var(--deep-wine);
   margin-bottom: 25px;
+  display: block;
 }
-.card-dor h3 {
+
+.card-dor h3, .area-card h3 {
   font-size: 1.3rem;
   margin-bottom: 15px;
+  color: var(--deep-wine);
 }
-.text-muted-custom {
+
+.text-muted-custom, .area-card p {
   color: var(--taupe) !important;
+  font-weight: 400;
   font-size: 0.95rem;
 }
 
-/* FAQ */
+/* --- BOTÕES --- */
+/* Botão Vinho Sólido */
+.btn-vinho {
+  background: var(--deep-wine);
+  color: #fff !important;
+  padding: 16px 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  border-radius: 2px;
+  transition: 0.3s;
+  border: 1px solid var(--deep-wine);
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-vinho:hover {
+  background: #3a060c;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(85,11,20,0.2);
+}
+
+/* Botão Cta Final */
+.btn-final {
+  background: var(--soft-beige) !important;
+  color: var(--deep-wine) !important;
+  padding: 18px 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  border-radius: 2px;
+  transition: 0.3s;
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-gold:hover {
+  transform: translateY(-3px);
+  background: #d4af37;
+  box-shadow: 0 10px 20px rgba(197, 160, 89, 0.3);
+}
+
+/* --- TIMELINE (Passo a Passo) --- */
+.timeline-section { padding: 90px 0; background: #fff; }
+
+.step-item { text-align: center; padding: 0 15px; }
+
+.step-number {
+  width: 60px;
+  height: 60px;
+  background: var(--deep-wine);
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 25px;
+  font-size: 1.5rem;
+  border: 2px solid var(--off-white);
+  box-shadow: 0 0 0 4px rgba(203, 192, 178, 0.3);
+}
+
+/* --- FAQ / ACCORDION --- */
 .faq-section { 
   padding: 80px 0; 
   background: rgba(203, 192, 178, 0.15); 
@@ -183,8 +269,10 @@ h1, h2, h3, .brand-name, .footer-brand {
   margin-bottom: 15px; 
   background: #fff;
   border-radius: 4px !important;
+  overflow: hidden;
 }
 .accordion-button { 
+  font-family: 'Montserrat', sans-serif; 
   font-weight: 600; 
   font-size: 1rem; 
   color: var(--deep-wine); 
@@ -193,19 +281,26 @@ h1, h2, h3, .brand-name, .footer-brand {
 }
 .accordion-button:not(.collapsed) { 
   background-color: var(--off-white); 
+  color: var(--deep-wine); 
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.05); 
   border-left: 4px solid var(--deep-wine);
 }
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: rgba(0,0,0,0.05);
+}
 .accordion-body { 
+  font-family: 'Montserrat', sans-serif; 
   font-size: 0.95rem; 
   color: var(--taupe); 
   padding: 25px;
   line-height: 1.8;
 }
 
-/* CTA Final */
+/* --- CTA FINAL --- */
 .cta-final {
   padding: 100px 0;
-  background-color: var(--deep-wine)!important;
+  background-color: var(--deep-wine);
   color: var(--off-white);
 }
 .cta-final h2 {
@@ -219,40 +314,60 @@ h1, h2, h3, .brand-name, .footer-brand {
   margin-bottom: 40px;
 }
 
-/* Footer */
+/* --- SEÇÃO DE AUTORIDADE (HOME) --- */
+.authority-section {
+  padding: 70px 0;
+  background: rgba(203,192,178,0.15);
+}
+.authority-section h2 {
+    font-size: 2.5rem;
+}
+.authority-section p {
+  max-width: 800px;
+  margin: 0 auto;
+  color: var(--taupe);
+    font-size: 1.2rem;
+}
+
+/* --- FOOTER --- */
 .footer-custom {
   background-color: #fff;
-  padding: 60px 0 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
 }
 .footer-text {
   color: var(--taupe);
   font-size: 0.85rem;
 }
 
-/* WhatsApp Float */
+/* ICON WHATSAPP */
 .whatsapp-float {
   position: fixed;
   bottom: 24px;
   right: 24px;
   width: 54px;
   height: 54px;
-  background-color: var(--deep-wine);
-  color: #fff;
+  background-color: #550B14; /* deep wine */
+  color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.8rem;
+  text-decoration: none;
   z-index: 999;
   box-shadow: 0 10px 25px rgba(85, 11, 20, 0.3);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+
 .whatsapp-float:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 35px rgba(85, 11, 20, 0.4);
+  color: #ffffff;
 }
 
-/* Mobile */
+
+/* --- MOBILE TWEAKS --- */
 @media (max-width: 991px) {
   .hero { text-align: center; padding: 60px 0; }
   .hero p { margin: 0 auto 35px; }
